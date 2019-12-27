@@ -1,0 +1,73 @@
+@import 'src/assets/css/veriables.scss';
+.topbar {
+	height: $top-height;
+	line-height: $top-height;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $bg-top;
+	color: #fff;
+	.left {
+		float: left;
+		height: 100%;
+		padding: 0 20px;
+		cursor: pointer;
+		img {
+			vertical-align: top;
+      width: 56px;
+      margin-top: 4px;
+      margin-right: 5px;
+		}
+		h1 {
+			display: inline-block;
+			margin-bottom: 0;
+			color: #fff;
+			font-weight: bold;
+			font-size: 24px;
+		}		
+	}
+	.right {
+		float: right;
+		line-height: $top-height;
+		color: $offWhite;
+		.user {
+			padding: 0 20px;
+			cursor: pointer;
+			.avatar {
+				background-color: $offWhite;
+				color: $gray;
+			}
+			.userName {
+				padding: 0 5px;
+				vertical-align: middle;
+			}
+			.anticon-down {
+				vertical-align: middle;
+			}
+			&:hover, &.active {
+				color: #fff;
+				.avatar {
+					background-color: #fff;
+					color: $black;
+				}
+			}
+		}
+	}
+}
+// 下拉框
+.userDropdown {
+  .ant-dropdown-menu {
+    background-color: $bg-left;
+    box-shadow: 0 0 6px #626569;
+    .ant-dropdown-menu-item {
+    	line-height: 28px;
+    	&:hover {
+    		color: #fff;
+    	}
+    	.anticon {
+    		margin-right: 10px;
+    	}
+    }
+  }
+}

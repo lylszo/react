@@ -1,0 +1,37 @@
+.handleUSD {
+  .multipleAddUsd {
+    display: inline-block;
+    float: right;
+    margin-bottom: 4px;
+    .dib {
+      position: relative;
+      .tip {
+        display: none;
+        position: absolute;
+        top: 37px;
+        right: 0;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 5px #555;
+        z-index: 99;
+        color: #333;
+        width: 400px;
+        font-size: 14px;
+        text-align: left;
+        p {
+          margin-bottom: 3px;
+          word-break: break-all;
+          word-wrap: break-word;
+        }
+      }
+      &.left .tip{
+        left: 0;
+      }
+      &:hover {
+        .tip {
+          display: block;
+        }
+      }
+    }    
+  }
+}

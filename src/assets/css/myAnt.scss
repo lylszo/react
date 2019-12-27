@@ -1,0 +1,140 @@
+/* 自定义ant样式, 均使用important加大权重，以防止被懒加载模块样式覆盖 */
+
+// 页面Tabs标签样式调整,使用时需添加pageTab类名
+.ant-tabs.pageTab {
+  > .ant-tabs-bar {
+    border-color: #ddd !important;
+    .ant-tabs-tab {
+      line-height: 30px !important;
+      font-size: 20px !important;
+      padding: 0 !important;
+      padding-bottom: 10px !important;
+    }
+    .ant-tabs-tab-active {
+      font-weight: bold !important;
+    }    
+  }
+}
+
+// 时间搜索框自适应宽度
+.ant-calendar-picker {
+  width: auto !important;
+}
+
+// 数据列表样式
+.ant-table {
+  .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+    text-align: center !important;
+    padding: 10px 6px !important;
+    border-color: $bg-left !important;
+    border: 1px solid #ccc !important;
+    .ant-btn-sm { // 操作按钮样式
+      &:nth-child(n+2) {
+        margin-left: 6px !important;
+      }
+    }
+  }
+  .ant-table-tbody tr:hover > td, .ant-table-row-hover:not(.ant-table-expanded-row) > td {
+    background-color: #eaeaea !important;
+  }
+  .ant-table-placeholder {
+    border: 1px solid #ccc !important;
+    border-top: none !important;
+  } 
+}
+// 小表格
+.smallTable {
+  .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+    padding: 6px 4px !important;
+  }
+}
+
+// 下拉框高亮
+.ant-select-dropdown-menu-item {
+  transition: none !important;
+  &:hover {
+    color: #fff !important;
+  }
+}
+.ant-select-dropdown-menu-item-selected:hover {
+  background-color: #626569 !important;
+}
+.ant-select-dropdown-menu-item-active {
+  color: #fff !important;
+}
+
+// 搜索框样式调整，需添加searchForm类名
+.searchForm {
+  overflow: hidden !important;
+  .ant-form-item-control-wrapper {
+    flex: 1 1 !important;
+  }
+  .ant-form-item {
+    float: left !important;
+    width: 25% !important;
+    display: flex !important;
+    margin-right: 0 !important;
+    margin-bottom: 25px !important;
+    padding: 0 10px !important;
+    .ant-form-explain {
+      position: absolute !important;
+    }
+    .ant-btn-primary {
+      margin-right: 20px !important;
+    }
+  }
+  @media screen and (max-width: 1600px) {
+    .ant-form-item {
+      width: 33% !important;
+    }
+  }
+}
+
+// 全局提示
+.ant-alert-info {
+  background-color: #f4f4f4 !important;
+  border: 1px dotted #ccc !important;
+}
+
+// 树列表hover样式
+.ant-tree li .ant-tree-node-content-wrapper:hover {
+  background-color: #ddd !important;
+}
+
+// danger类型按钮样式修改
+.ant-btn-danger {
+  color: $red !important;
+  &:hover {
+    background-color: #f5f5f5 !important;
+    color: $red !important;
+    border-color: $red !important;
+  }
+}
+
+// 上传图片的卡片样式
+.ant-upload.ant-upload-select-picture-card,
+.ant-upload-list-picture-card .ant-upload-list-item {
+  width: 64px !important;
+  height: 64px !important;
+}
+.advert .ant-upload.ant-upload-select-picture-card,
+.advert .ant-upload-list-picture-card .ant-upload-list-item {
+  width: 200px !important;
+  height: 104px !important;
+}
+.ant-upload.ant-upload-select-picture-card > .ant-upload {
+  padding: 4px !important;
+}
+
+// 垂直tab栏默认选中样式
+.ant-tabs-left-bar .ant-tabs-tab-active {
+  background-color: #ccc !important;
+}
+
+// list行间距调整
+.ant-list-item {
+  padding: 8px 0 !important;
+}
+.ant-list-item-meta-description {
+  color: #999 !important;
+}

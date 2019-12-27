@@ -1,0 +1,29 @@
+.pro-account {
+  .person {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 40px;
+    border: 1px dashed gray;
+    table {
+      td {
+        padding-left: 30px;
+      }      
+    }
+  }
+  .passwordForm {
+    width: 600px;
+    margin: 10vmin auto;
+    .codeInput {
+      width: 70%;
+    }
+    .btnBox {
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+      button {
+        width: 240px;
+      }
+    }
+  }
+}

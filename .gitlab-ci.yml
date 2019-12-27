@@ -1,0 +1,23 @@
+stages:
+- build
+
+variables:
+  APP_NAME: frontend-staff
+  REGISTRY: "136204750825.dkr.ecr.ap-southeast-1.amazonaws.com"
+  REGISTRY_NAMESPACE: "crush-deploy"
+  REGISTRY_USER: "AWS"
+  DOCKERFILE_URL: "https://raw.githubusercontent.com/zgwldrc/bcc/master/javascript-frontend-gitlab-ci-components/Dockerfile.openresty"
+  BUILD_SCRIPT: "https://raw.githubusercontent.com/zgwldrc/bcc/master/javascript-frontend-gitlab-ci-components/13-build.sh"
+
+build:npm:
+  stage: build
+  tags:
+  - aliyun
+  - singapore
+  image: zgwldrc/npm-and-docker:awscli
+  cache:
+    paths:
+    - node_modules/
+  script:
+  - |
+    curl -s $BUILD_SCRIPT |bash

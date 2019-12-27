@@ -1,0 +1,21 @@
+.login {
+	background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
+	.box {
+		width: 360px;
+		height: 300px;
+		margin: 17vh auto;
+		h1 {
+			text-align: center;
+			font-weight: bold;
+			font-size: 32px;
+		}	
+		.loginForm {
+			.codeInput {
+				width: 240px;
+			}		
+		}
+		.btn {
+			width: 100%;
+		}
+	}
+}

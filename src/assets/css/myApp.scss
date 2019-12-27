@@ -1,0 +1,70 @@
+/* 项目个性化样式 */
+html, body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: $black;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+// 布局
+html {
+	padding-top: $top-height;
+	padding-left: $left-width;
+  overflow: hidden;
+}
+body {
+	overflow: auto;
+  padding: 30px;
+}
+
+// 链接
+a, .link {
+  cursor: pointer;
+	color: $gray;
+  text-decoration: underline; 
+	&:hover {
+		color: black;
+    text-decoration: underline; 
+	} 
+}
+
+// 使布局页面以外的页面铺满屏幕（登录、注册等）
+.wholePage {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: auto;
+}
+
+// 页面标题
+.pageTitle {
+	font-size: 20px;
+	line-height: 30px;
+  padding-bottom: 10px;
+	font-weight: bold;
+	border-bottom: 1px solid $gray;
+	margin-bottom: 20px;
+}
+
+// 页面中间的表单
+.centerForm {
+  width: 800px;
+  margin: 5vmin auto;
+  .btnBox {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    button {
+      width: 240px;
+    }
+  }
+}
+
+// react-quill标题居中
+.ql-formats {
+  line-height: 20px;
+}

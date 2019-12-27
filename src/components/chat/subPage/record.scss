@@ -1,0 +1,21 @@
+.chatRecord {
+  .recordBox {
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    padding: 20px;
+    max-height: calc(100vh - 280px);
+    min-height: 100px;
+    overflow: auto;
+    .header {
+      text-align: center;
+    }
+    .allRecordImg {
+      width: 200px;
+      height: 124px;
+    }
+    .imgItem {
+      padding: 15px;
+      height: 150px;
+    }
+  }
+}

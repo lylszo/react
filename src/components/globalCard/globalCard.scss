@@ -1,0 +1,22 @@
+.globalCardList {
+  .logistics {
+    border: 1px solid #ccc;
+    overflow: auto;
+    min-height: 100px;
+    max-height: 300px;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    .ant-spin {
+      margin-top: 25px;
+    }
+    .noneTip {
+      text-align: center;
+      line-height: 60px;
+    }
+    .ant-timeline {
+      padding-top: 15px;
+      text-align: left;
+    }
+  }
+}

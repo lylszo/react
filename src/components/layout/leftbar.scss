@@ -1,0 +1,34 @@
+@import 'src/assets/css/veriables.scss';
+.leftbar {
+	width: $left-width;
+	background-color: $bg-left;
+	height: calc(100vh - #{$top-height});
+	position: fixed;
+	left: 0;
+	z-index: 1;
+	top: $top-height;
+	overflow: auto;
+	float: left;
+	box-shadow: 0 0 6px #626569;
+	.ant-menu-item, .ant-menu-submenu-title, .anticon {
+		font-size: 16px;
+	}
+	.ant-menu {
+		background-color: inherit;
+		.ant-menu-item::after {
+			display: none;
+		}
+		.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+			color: inherit;
+			background-color: inherit;
+		}
+		.ant-menu-item.active {
+			color: #fff !important;
+			background-color: #626569 !important;
+		}
+	}
+	.spin {
+		text-align: center;
+		margin-top: 15vmin;
+	}
+}

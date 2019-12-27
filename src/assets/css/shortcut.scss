@@ -1,0 +1,133 @@
+// 常用快捷样式
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.red {
+  color: $red;
+}
+.green {
+  color: $green;
+}
+.babelColor {
+  color: rgba(0, 0, 0, 0.85);
+}
+.tac{
+  text-align: center;
+}
+.tar{
+  text-align: right;
+}
+.tal{
+  text-align: left;
+}
+.vat{
+  vertical-align: top;
+}
+.vam{
+  vertical-align: middle;
+}
+.vab{
+  vertical-align: bottom;
+}
+.pointer{
+  cursor: pointer;
+}
+.bold{
+  font-weight: bold;
+}
+.pointer{
+  cursor: pointer;
+}
+.db{
+  display: block !important;
+}
+.dn{
+  display: none;
+}
+.dib{
+  display: inline-block;
+}
+.relative{
+  position: relative;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+@for $i from 0 through 10 {
+  .mt#{$i*5} {
+    margin-top: $i*5px;
+  }
+}
+
+@for $i from 0 through 10 {
+  .mr#{$i*5} {
+    margin-right: $i*5px;
+  }
+}
+
+@for $i from 0 through 10 {
+  .mb#{$i*5} {
+    margin-bottom: $i*5px;
+  }
+}
+
+@for $i from 0 through 10 {
+  .ml#{$i*5} {
+    margin-left: $i*5px;
+  }
+}
+
+@for $i from 0 through 10 {
+  .pt#{$i*5} {
+    padding-top: $i*5px;
+  }
+}
+
+@for $i from 0 through 10 {
+  .pr#{$i*5} {
+    padding-right: $i*5px;
+  }
+}
+
+@for $i from 0 through 10 {
+  .pb#{$i*5} {
+    padding-bottom: $i*5px;
+  }
+}
+
+@for $i from 0 through 10 {
+  .pl#{$i*5} {
+    padding-left: $i*5px;
+  }
+}
+
+@for $i from 6 through 30 {
+  .lh#{$i*2} {
+    line-height: $i*2px !important;
+  }
+}
+
+@for $i from 12 through 60 {
+  .fs#{$i} {
+    font-size: $i*1px;
+  }
+}
