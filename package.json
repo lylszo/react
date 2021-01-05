@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "3.16.4",
-    "axios": "0.18.1",
+    "axios": "0.21.1",
     "customize-cra": "0.2.12",
     "react": "16.8.6",
     "react-app-rewired": "2.1.3",
