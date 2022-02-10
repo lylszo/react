@@ -32,7 +32,7 @@
     "babel-plugin-import": "^1.12.2",
     "less": "^3.10.3",
     "less-loader": "^4.1.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   },
   "homepage": ".",
   "proxy": "http://manage.t.youbank.top"
